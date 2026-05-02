@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #7dd3fc;
+  --color-tertiary: #c8a0f0;
+  --color-background: #0a0e1a;
+  --color-surface: #0f1524;
+  --color-on-surface: #e0e8f0;
+  --color-on-surface-variant: #a0b4c4;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface antialiased selection:bg-primary/30;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-slate-900/60 backdrop-blur-lg border border-sky-300/10;
+  }
+  
+  .glass-elevated {
+    @apply bg-slate-800/75 backdrop-blur-2xl border border-sky-300/20 shadow-[0_0_30px_rgba(125,211,252,0.05)];
+  }
+
+  .glow-subtle {
+    box-shadow: 0 0 30px rgba(125, 211, 252, 0.05);
+  }
+}
+
+.material-icons {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
