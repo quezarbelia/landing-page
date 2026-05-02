@@ -1,20 +1,20 @@
-# landing-page
+# landing- page
 
 ## Deployment
 
-### GitHub Pages (Recommended - Free)
-1. Go to https://github.com/quezarbelia/landing-page/settings/pages
+### GitHub Pages (Free - Recommended)
+1. Go to https://github.com/quezarbelia/landing- page/settings/pages
 2. Source: Deploy from a branch
 3. Branch: main, / (root)
 4. Click Save
-5. Your site will be live at: **https://quezarbelia.github.io/landing-page**
+5. Live URL: **https://quezarbelia.github.io/landing- page**
 
-### Alternative: Vercel CLI
-```bash
-npx vercel --prod
-```
+### Cloudflare Tunnel (Temporary)
+- Run: `npx cloudflared tunnel --url http://localhost:80 80`
 
 ## Features
 - localStorage persistence for contact form data
-- Mobile-first responsive design
-- Fast load time (< 3s)
+- Automatic ticket generation (TK-XXXXXXXX-XXXX)
+- WhatsApp contact button
+- Mobile- first responsive design
+- Fade-in animations
