@@ -1,5 +1,1 @@
-{
-  "name": "landing-page",
-  "builds": [{"src": "index.html", "use": "@vercel/static"}],
-  "routes": [{"src": "/(.*)", "dest": "index.html"}]
-}
+{"name": "auracore-systems", "builds": [{"src": "index.html", "use": "@vercel/static"}], "routes": [{"src": "/(.*)", "dest": "index.html"}]}
